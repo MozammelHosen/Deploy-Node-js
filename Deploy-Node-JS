@@ -1,0 +1,23 @@
+                                                                                                            
+                                                             *** Node js Deploy Vercel ***
+   
+  *** Google Source ***
+  
+  1. https://shadowsmith.com/how-to-deploy-an-express-api-to-vercel
+  
+  2.  {
+  "version": 2,
+  "builds": [
+    {
+      "src": "./index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}
+ 
